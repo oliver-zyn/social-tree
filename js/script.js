@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     if (isDarkModeSystem()) {
+        const chkDarkMode = document.querySelector('#chkDarkMode')
+        chkDarkMode.checked = true
         darkModeToggle()
     }
 })
 
 function darkModeToggle() {
-    let html = document.querySelector('html')
+    const html = document.querySelector('html')
     html.classList.toggle('dark-mode')
 }
 
